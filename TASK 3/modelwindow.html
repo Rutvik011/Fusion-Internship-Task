@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Window</title>
+    <link rel="stylesheet" href="stylemw.css">
+</head>
+<body>
+    <header>
+        <nav class="navcontainer">
+          <h1 class="nav_logo">Model Window</h1>      
+        </nav>
+      </header>
+    
+    <div class="container">
+        <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+            <img src="image/404-tick.png" >
+            <h2>Thank You!</h2>
+            <p>yore details has Been Succesfully Submitted. Thanks!</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+    <script>
+        let popup = document.getElementById("popup");
+         
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+    
+</body>
+</html>
