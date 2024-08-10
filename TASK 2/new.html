@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Website</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .featured-books {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .book {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 10px;
+            flex: 1;
+            min-width: 200px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .book img {
+            width: 100%;
+            height: auto;
+        }
+
+        .book h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .subscribe {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .subscribe input[type="email"] {
+            padding: 10px;
+            font-size: 1em;
+            margin-right: 10px;
+        }
+
+        .subscribe button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .subscribe button:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .featured-books {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Books & Beyond</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Books</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <section class="introduction">
+            <h2>Welcome to Books & Beyond</h2>
+            <p>Your local bookstore with a curated selection of books across genres. We believe in the power of reading to inspire and educate. Come visit us or explore our collection online!</p>
+        </section>
+
+        <section class="featured-books">
+            <div class="book">
+                <img src="image\shopping (1).webp" alt="Book 1">
+                <h3>HARRY POTTER BOX SET</h3>
+                <p>Welcome to Hogwarts! Harry Potter The Complete Collection is a beautifully boxed set containing all seven Harry Potter children’s books in paperback.</p>
+            </div>
+            <div class="book">
+                <img src="image\s6q7e_512.webp" alt="Book 2">
+                <h3>Ikigai { English Paperback }</h3>
+                <p>It's the Japanese word for ‘a reason to live’ or ‘a reason to jump out of bed in the morning’.</p>
+            </div>
+            <div class="book">
+                <img src="image\shopping (2).webp" alt="Book 3">
+                <h3>WINGS OF FIRE AN AUTOBIOGRAPHY</h3>
+                <p>Summary of the Book One of the most inspiring and popular autobiographies to read is Late Abdul Kalam’s Wings of Fire.</p>
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated with our latest books and events.</p>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </section>
+    </main>
+
+    <footer>
+    
+    </footer>
+</body>
+</html>
